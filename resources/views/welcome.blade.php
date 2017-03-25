@@ -22,7 +22,7 @@
     
 
 <div id="app">
-@include('layouts.nav')
+@include('layouts.dynamic-nav')
 
 
  
