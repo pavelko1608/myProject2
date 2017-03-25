@@ -1,6 +1,6 @@
 <template>
    <div class="slider">
-        <p class="slider-text"> Get the fucking job done
+        <p class="slider-text"> YOLO
 </p>
     </div>
 </template>
