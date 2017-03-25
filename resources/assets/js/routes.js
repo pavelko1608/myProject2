@@ -37,6 +37,7 @@ let routes = [
 
 
 export default new VueRouter({
-	routes
+	routes,
+	linkActiveClass: 'is-active'
 	
 });
