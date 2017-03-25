@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@include('layouts.nav')
+@include('layouts.static-nav')
 @section('content')
                 <div class="form">
                 

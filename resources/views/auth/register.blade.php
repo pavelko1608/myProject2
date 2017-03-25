@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@include('layouts.static-nav')
+
 @section('content')
 <div class="container">
     <div class="row">
