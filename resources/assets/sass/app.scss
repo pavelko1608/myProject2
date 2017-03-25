@@ -84,8 +84,11 @@ body, html {
 }
 
 .cart {
-	display: flex;
-	justify-content: flex-end;
+	position: fixed;
+	top: 50px;
+	right: 0px;
+	
+
 
 }
 .cartButton {
@@ -103,7 +106,7 @@ body, html {
   		opacity: .5;
   	}
 
-  	margin: 30px 30px 0 0;
+  	margin: 30px 17px 0 0;
 
 
 }
@@ -122,6 +125,7 @@ body, html {
 .cart-btn-group {
 	display: flex;
 	flex-direction: column;
+
 }
 
 .item {
@@ -199,11 +203,12 @@ body, html {
 }
 
 .verified {
-	margin-right: 20px;
+	margin-right: 15px;
+	margin-top:40px;
 }
 
 .checkout-btn {
-	width: 100%;
+	width: 100px;
 	height: 33px;
 	background: #000000;
 	align-items:  center;
