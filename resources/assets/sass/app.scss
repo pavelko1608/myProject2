@@ -53,11 +53,6 @@ body, html {
 }
 
 .nav-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
   padding: 0 10px 0 10px;
   font-family : sans-serif;
   font-size : 24px;
@@ -140,13 +135,7 @@ body, html {
 }
 
 .item .item-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  font-family : sans-serif;
-  
+  font-family : sans-serif; 
   color : #4A4A4A;
   
 }
@@ -176,11 +165,6 @@ body, html {
 }
 
 .item-button-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
   font-family : sans-serif;
   color : #4A4A4A;
   cursor: pointer;
@@ -223,11 +207,6 @@ body, html {
 }
 }
 .checkout-btn p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
   font-family : sans-serif;
   color : #4A4A4A;
   cursor: pointer;
