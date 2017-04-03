@@ -13594,6 +13594,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             if (product.quantity == 1) {
                 this.items.push(product);
             }
+        },
+        sendShit: function sendShit(total) {
+            axios({
+                method: 'post',
+                url: '/displayTotal',
+                data: {
+                    total: total
+                }
+            });
+            console.log(total);
         }
     }
 
@@ -24133,7 +24143,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "verified"
   }, [_c('p', [_vm._v("Your Cart")]), _vm._v(" "), _vm._l((_vm.items), function(product) {
     return _c('p', [_c('strong', [_vm._v(_vm._s(product.quantity))]), _vm._v(": " + _vm._s(product.title) + " - "), _c('span', [_vm._v(_vm._s(product.price * product.quantity) + " $")])])
-  }), _vm._v(" "), _c('div', [_c('p', [_vm._v("Total: "), _c('span', [_vm._v(_vm._s(_vm.total) + " $")])]), _vm._v(" "), _vm._m(0)])], 2)])])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c('div', [_c('p', [_vm._v("Total: "), _c('span', [_vm._v(_vm._s(_vm.total) + " $")])]), _vm._v(" "), _c('div', {
+    staticClass: "checkout-btn"
+  }, [_c('p', {
+    on: {
+      "click": function($event) {
+        _vm.sendShit(_vm.total)
+      }
+    }
+  }, [_vm._v("Looks Good")])])])], 2)])])]), _vm._v(" "), _c('div', {
     staticClass: "content"
   }, _vm._l((_vm.products), function(product) {
     return _c('div', [_c('div', {
@@ -24153,11 +24171,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "item-button-text"
     }, [_vm._v("Add to cart")])])])])
   }))])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "checkout-btn"
-  }, [_c('p', [_vm._v("Looks Good")])])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()

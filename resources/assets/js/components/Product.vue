@@ -34,7 +34,7 @@
                       
                         <div>
                           <p>Total: <span>{{ total }} $</span></p>
-                          <div class="checkout-btn"><p>Looks Good</p></div>
+                          <div class="checkout-btn"><p @click="sendShit(total)" >Looks Good</p></div>
                         </div>
                         
         </div>
@@ -87,6 +87,17 @@
                 if(product.quantity == 1) {
                 this.items.push(product);
             }
+            
+            },
+            sendShit(total) {
+                axios({
+                    method: 'post',
+                    url: '/displayTotal',
+                    data: {
+                        total: total
+                    }
+                });
+                console.log(total);
 
             }
         }
